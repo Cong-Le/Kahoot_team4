@@ -1,0 +1,231 @@
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    /* -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; */
+}
+
+
+#logo {
+    height: 35px;
+    margin: 10px 0px 10px 20px  
+}
+#title{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+#subtitle{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#link{
+    color: white;
+}
+
+#back{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#gameButton{
+    font-size:40px;
+}
+/* #gameButton:hover{
+    cursor: pointer;
+} */
+
+#game-list{
+    float: left ; 
+    margin-left:60px;
+}
+
+#gameButton{
+    background-image: url("/images/kahoot_card_img.png");
+    
+    width : 200px ;
+    height: 200px ;
+    margin-right : 45px;
+    background-size: cover;
+}
+
+.body1 {
+    /*   border: 2px solid rgb(0, 0, 0); */
+      width: 100%;
+      height: 100%;
+      background-color: #F2F2F2;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+}
+.webheader {
+    height: 55px;
+    width: 100%;
+    background-color:#46178F;
+    z-index: 1;
+    
+    box-shadow: 0px 3px 2px rgb(219, 219, 219);
+    position: fixed;
+}
+#kahoot_list {
+    margin: 100px 350px;
+}
+.kahoot-card__content-wrap {
+    min-width: 450px;
+    background-color: white;
+    margin: 10px 2px;
+    border-radius: 4px;
+    height: 140px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+#kahoot-card__image {
+    margin: 2px;
+    height: 136px;
+    border-radius: 2px;
+}
+#kahoot-card__details {
+    background-color: white;
+    /* width: 100%; */
+    height: 136px;
+    position: absolute;
+    left: 205px;
+    top: 2px;
+    right: 1px;
+}
+#kahoot-card__title {
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.kahoot-card__information {
+
+}
+.kahoot-card__action-buttons {
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    right: 0px;
+    top: 86px;
+    border-radius: 4px;
+}
+#playerIcon{
+    margin: 5px 7px;
+    width: 38px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 94px;
+    top: 2px;
+}
+#playerIcon2{
+    width: 90px;
+    height: 38px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+}
+#question-mark {
+    width: 90px;
+    height: 38px;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
+#create_btn {
+    width: 90px;
+    height: 38px;
+    position: absolute;
+    right: 168px;
+    top: 7px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    box-shadow: 0px 4px rgb(182, 182, 182);
+    cursor: pointer;
+}
+#play {
+    margin: 9px 12px;
+    width: 64px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #20740A;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#repair {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    margin: 9px 12px;
+    width: 64px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #1058AF;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 1px solid white;
+    cursor: not-allowed;
+}
+
+/* button{
+    width:60px;
+    height: 33px;
+    color: white;
+    border: 2px solid #ccc;
+   /*  border-radius: 8px; */
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+} */
+/* #play{
+    font-size:20px;
+    background-color: green ;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+#repair{
+    font-size: 20px;
+    background:blue;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+} */

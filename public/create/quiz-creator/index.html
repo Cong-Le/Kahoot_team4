@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "../../css/quizCreator1.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <!--logo-->
+                <a href="#" title="Kahoot.com" class="logo"><img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMxIiBoZWlnaHQ9IjQ2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTY3LjUxIDE1Ljc4NmMtNS41NzYuMDk4LTEwLjM3IDQuODMtMTAuNzA4IDEwLjU2OC0uMzM4IDUuNzM4IDQuMTgzIDEwLjg2OCAxMC4wOTggMTEuNDU4IDUuOTE2LjU4OCAxMC43MDktNC4xNDUgMTAuNzA5LTEwLjU2OS0uMDAxLTYuNDI3LTQuNTIxLTExLjU1Ni0xMC4wOTktMTEuNDU3em0uNjk0IDE2LjYwOGMtMy4wNjcuMzYxLTUuNjc5LTIuNDQzLTUuNTAyLTYuMDE0LjE3NC0zLjU3MiAxLjYwMi01LjgwNCA0LjQ5NC01Ljg2NSAyLjg5Mi0uMDYxIDQuNjQyIDMuMjYgNC4zMTIgNy4xNDItLjI1MyAyLjk3My0yLjA5NCA0LjU5NC0zLjMwNCA0LjczN3ptMTAuNDg3LTQuNTY1YzAgNi40MjYgNC43OTMgMTEuMTU4IDEwLjcwOSAxMC41NjkgNS45MTUtLjU4OSAxMC40MzYtNS43MTkgMTAuMDk5LTExLjQ1Ny0uMzM3LTUuNzM4LTUuMTMzLTEwLjQ3MS0xMC43MS0xMC41NjktNS41NzctLjA5OC0xMC4wOTggNS4wMzItMTAuMDk4IDExLjQ1N3ptNi4xMDEuNDE1Yy0uMzMtMy44ODMgMS40Mi03LjIwMyA0LjMxMi03LjE0MiAyLjg5My4wNiA0LjMyIDIuMjkyIDQuNDk1IDUuODY0LjE3NiAzLjU3LTIuNDM3IDYuMzc0LTUuNTAzIDYuMDEzLTEuMjEtLjE0MS0zLjA1LTEuNzYzLTMuMzA0LTQuNzM1ek0wIDQwLjY1N1Y3LjY2OGw2LjkxMS0xLjc3My0uMDE3IDE0LjA1NEwxOC41NjUgOC42OTMgMjQuNTY3IDExbC04LjQ4MiA5LjQxIDUuNjI2IDIwLjQ5NGgtNi4xMDNsLTQuNTAyLTE1LjcwMi00LjI1MiA0LjE2NC4wNTcgMTEuNTM4TDAgNDAuNjU3em00Ny41OTItMTQuMzg5Yy0uMDAyLS4wNTguMDA0LjA3MSAwIDAgLjAwNC4wNjgtLjAwMi0uMDYgMCAweiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik00Ny41OTIgMjYuMjY4Yy0uMDAyLS4wNDcuMDA0LjA0OCAwIDAgLjAwNC4wNDctLjAwMi0uMDQ5IDAgMHoiIGZpbGw9IiM0NjE3OEYiLz48cGF0aCBkPSJNNDcuNTkyIDI2LjI2OGMtLjAwNS0uMTIzLjAwOC4xNTMgMCAwIC4wMDguMTQxLS4wMDYtLjEzMyAwIDB6IiBmaWxsPSIjNDYxNzhGIi8+PHBhdGggZD0iTTQ3LjU5MiAyNi4yNjhjLS4wMDEtLjAyMi4wMDEuMDIxIDAgMCAuMDAxLjAyMi0uMDAxLS4wMjIgMCAweiIgZmlsbD0iIzQ2MTc4RiIvPjxwYXRoIGQ9Ik00Ny41OTIgMjYuMjY4Yy0uMDAyLS4wNy4wMDYuMTA3IDAgMCAuMDA3LjExNi0uMDAyLS4wNjcgMCAweiIgZmlsbD0iIzQ2MTc4RiIvPjxwYXRoIGQ9Ik00Ny41OTIgMjYuMjY4Yy0uMDAxLS4wMjQuMDAzLjA0MyAwIDAgLjAwMy4wNDEtLjAwMS0uMDI1IDAgMHoiIGZpbGw9IiM0NjE3OEYiLz48cGF0aCBkPSJNNDcuNTkyIDI2LjI2OGMtLjAwNC0uMDk0LjAwNi4xMDUgMCAwIC4wMDcuMTEtLjAwMy0uMDg5IDAgMHoiIGZpbGw9IiM0NjE3OEYiLz48cGF0aCBkPSJNNDcuNTkyIDI2LjI2OGMtLjAwNC0uMTEzLjAwNi4xMDYgMCAwIC4wMDcuMTE2LS4wMDQtLjEwNCAwIDB6IiBmaWxsPSIjNDYxNzhGIi8+PHBhdGggZD0iTTQ3LjU5MiAyNi4yNjhjLS4wMDEtLjAxNiAwIDAgMCAwIC4wMDEuMDA4LS4wMDEtLjAwOCAwIDB6IiBmaWxsPSIjNDYxNzhGIi8+PHBhdGggZD0iTTQ3LjU5MiAyNi4yNjhjLS4wMDEtLjAzMS4wMDEuMDIgMCAwIC4wMDIuMDI2LS4wMDEtLjAyNiAwIDB6IiBmaWxsPSIjNDYxNzhGIi8+PHBhdGggZD0iTTQ3LjU5MiAyNi4yNjhjLS4wMDEtLjAxLjAwMS4wMDkgMCAwIC4wMDEuMDA3LS4wMDEtLjAxMiAwIDB6IiBmaWxsPSIjNDYxNzhGIi8+PHBhdGggZD0iTTQ3LjU5MiAyNi4yNjhjLS4wMDItLjA1MS4wMDQuMDUxIDAgMCAuMDAzLjA0My0uMDAyLS4wNjEgMCAweiIgZmlsbD0iIzQ2MTc4RiIvPjxwYXRoIGQ9Ik00Ny41OTIgMjYuMjY4Yy0uMDA5LS4xOTQuMDEyLjIyOSAwIDAgLjAxLjE3Mi0uMDExLS4yNDEgMCAweiIgZmlsbD0iIzQ2MTc4RiIvPjxwYXRoIGQ9Ik00Ny41OTIgMjYuMjY4Yy0uMDAxLS4wMjMuMDAxLjAyIDAgMCAuMDAxLjAyMi0uMDAxLS4wMjIgMCAweiIgZmlsbD0iIzQ2MTc4RiIvPjxwYXRoIGQ9Ik01MC40NjggMzguMzU0aDYuMDY4bC0yLjI4Mi0xNi4xNTJjLS44NjMtOS40MzQtNC4zMDQtOS40NTYtMTAuNzI2LTcuNDA0TDQzLjM5NSAwbC01LjkwNiAxLjU3OC45NDEgMzYuNTc1IDUuODAxLjItLjMzNi0xOC44OThjMS4yNzEtLjU2MiA1LjQ3Mi0xLjc0NSA1LjYxMyAyLjkxM2wuNTYyIDYuNjQzLjM5OCA5LjM0M3ptNzMuMTYuMTlsLTEuNzEzIDQuMDM0IDMuNjI2IDIuNTMxIDMuNTc1LTIuMTM4LTEuNTA2LTQuNDI3aC0zLjk4MnpNOTguNDA5IDEzLjQyOWwuOTk0IDYuODY0aDQuMTU0bC4yODggMTYuMzI3cy0uNjQ5IDUuODc0IDguMjAyIDQuNTI5YzAgMCAyLjc3LS44MyAyLjY4Mi0yLjc4OXYtNi40NXMtMS44NjUgMS4xMTUtMy44OTIgMS4xMTUtMi4wNC0uOTg5LTIuMDQtLjk4OWwtLjU0Mi0xMi42NDUgNi40NzQtLjM2MXYtNC4xNTVsLTYuNjI4LS40MzcuMDgxLTguNTU3LTQuNjEtMS45MTEtLjAwNiA5LjYzOS01LjE1Ny0uMTh6bTIwLjM3NS05LjgyTDEzMSA1Ljk2MmwtNC43MTYgMzAuMjktNy41LTMyLjY0M3pNMjMuMSAxNS4wMTZsMS42MTggNC4yNzFjNC4wMTQtMi40MzggNi4yODIuMDEgNi4yODIuMDFsLS4wMzEgMi43MjZjLTExLjk2MSAyLjEyLTguOTM1IDEzLjMxLTguOTM1IDEzLjMxIDEuMjEgNC4zOTEgNS4xNDggNC4yMzkgNS4xNDggNC4yMzlsOC45NjguMDAxLjE3LTIwLjM2MWMtMS40MDUtOS40NzgtMTMuMjItNC4xOTYtMTMuMjItNC4xOTZ6bTcuODU2IDIwLjY2MXMtNC4zMzggMS4wNjItNC44MTctMy4yMTJjMCAwIC4wOTMtNi42MTUgNC45OC01LjkwNGwtLjE2MyA5LjExNnoiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+"></a>
+                <!--menu-->
+                <div class="form-field">
+                    <label id="quizTitle"></label>
+                    <input class="title" id="name" type="text" name="name" autofocus placeholder="Enter kahoot title.." />
+                </div>
+                <div class="exit">
+                    <a href="" onclick='cancelQuiz()' id="exit"><span>EXIT</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="l-form">
+            <br>
+    <br>
+    <div id="allQuestions">
+        <div id="question-field">
+            <input class="question" id="q1" type="text" autofocus placeholder="Click to  start typing your question..." />
+            <br>
+            <br>
+            <input class="answertop" id="1a1" type="text" autofocus placeholder="Add answer 1"/>
+            <input class="answertop" id="1a2" type="text" autofocus placeholder="Add answer 2"/>
+            <br>
+            <br>
+            <input class="answerbottom" id="1a3" type="text" autofocus placeholder="Add answer 3"/>
+            <input class="answerbottom" id="1a4" type="text" autofocus placeholder="Add answer 4"/>
+            <br>
+            <br>
+            <label>Correct Answer (1-4) :</label>
+            <input class="correct" id="correct1" type="number" autofocus />
+        </div>
+    </div>
+    <br>
+    <div class="add">
+        <button class="learn-more" onclick="addQuestion()">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Add question</span>
+          </button>
+    </div>
+   
+    <br>
+    <br>
+    <div class="add">
+        <button class="learn-more" onclick="updateDatabase()">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Create Quiz</span>
+          </button>
+    </div>
+    <br>
+    </div>
+    
+    <script src="../../socket.io/socket.io.js"></script>
+    <!-- <script src = "../../js/quizCreator.js"></script> -->
+    <script>
+        var socket = io();
+var questionNum = 1; //Starts at two because question 1 is already present
+
+function updateDatabase(){
+    var questions = [];
+    var name = document.getElementById('name').value;
+    for(var i = 1; i <= questionNum; i++){
+        var question = document.getElementById('q' + i).value;
+        var answer1 = document.getElementById(i + 'a1').value;
+        var answer2 = document.getElementById(i + 'a2').value;
+        var answer3 = document.getElementById(i + 'a3').value;
+        var answer4 = document.getElementById(i + 'a4').value;
+        var correct = document.getElementById('correct' + i).value;
+        var answers = [answer1, answer2, answer3, answer4];
+        questions.push({"question": question, "answers": answers, "correct": correct})
+    }
+    
+    var quiz = {id: 0, "name": name, "questions": questions};
+    socket.emit('newQuiz', quiz);
+}
+
+function addQuestion(){
+    questionNum += 1;
+    
+    var questionsDiv = document.getElementById('allQuestions');
+    
+    var newQuestionDiv = document.createElement("div");
+    
+    var questionLabel = document.createElement('label');
+    var questionField = document.createElement('input');
+    
+    var answer1Label = document.createElement('label');
+    var answer1Field = document.createElement('input');
+    
+    var answer2Label = document.createElement('label');
+    var answer2Field = document.createElement('input');
+    
+    var answer3Label = document.createElement('label');
+    var answer3Field = document.createElement('input');
+    
+    var answer4Label = document.createElement('label');
+    var answer4Field = document.createElement('input');
+    
+    var correctLabel = document.createElement('label');
+    var correctField = document.createElement('input');
+    
+    questionLabel.innerHTML = "Question " + String(questionNum) + ": ";
+    questionField.setAttribute('class', 'question');
+    questionField.setAttribute('id', 'q' + String(questionNum));
+    questionField.setAttribute('type', 'text');
+    questionField.setAttribute('placeholder', 'Click to  start typing your question...');
+    
+    
+    correctLabel.innerHTML = "Correct Answer (1-4): ";
+    
+    
+    answer1Field.setAttribute('id', String(questionNum) + "a1");
+    answer1Field.setAttribute('type', 'text');
+    answer1Field.setAttribute('class', 'answertop');
+    answer1Field.setAttribute('placeholder',"Add answer 1");
+    
+
+    answer2Field.setAttribute('id', String(questionNum) + "a2");
+    answer2Field.setAttribute('type', 'text');
+
+    answer2Field.setAttribute('class', 'answertop');
+    answer2Field.setAttribute('placeholder',"Add answer 2");
+
+    answer3Field.setAttribute('id', String(questionNum) + "a3");
+    answer3Field.setAttribute('type', 'text');
+    answer3Field.setAttribute('class', 'answerbottom');
+    answer3Field.setAttribute('placeholder',"Add answer 3");
+
+    answer4Field.setAttribute('id', String(questionNum) + "a4");
+    answer4Field.setAttribute('type', 'text');
+    answer4Field.setAttribute('class', 'answerbottom');
+    answer4Field.setAttribute('placeholder',"Add answer 4");
+
+
+    correctField.setAttribute('id', 'correct' + String(questionNum));
+    correctField.setAttribute('class', 'correct' );
+    correctField.setAttribute('type', 'number');
+    
+    newQuestionDiv.setAttribute('id', 'question-field');//Sets class of div
+    
+    newQuestionDiv.appendChild(questionLabel);
+    newQuestionDiv.appendChild(questionField);
+    newQuestionDiv.appendChild(document.createElement('br'));
+    newQuestionDiv.appendChild(document.createElement('br'));
+    newQuestionDiv.appendChild(answer1Label);
+    newQuestionDiv.appendChild(answer1Field);
+    newQuestionDiv.appendChild(answer2Label);
+    newQuestionDiv.appendChild(answer2Field);
+    newQuestionDiv.appendChild(document.createElement('br'));
+    newQuestionDiv.appendChild(document.createElement('br'));
+    newQuestionDiv.appendChild(answer3Label);
+    newQuestionDiv.appendChild(answer3Field);
+    newQuestionDiv.appendChild(answer4Label);
+    newQuestionDiv.appendChild(answer4Field);
+    newQuestionDiv.appendChild(document.createElement('br'));
+    newQuestionDiv.appendChild(document.createElement('br'));
+    newQuestionDiv.appendChild(correctLabel);
+    newQuestionDiv.appendChild(correctField);
+    
+    questionsDiv.appendChild(document.createElement('br'));//Creates a break between each question
+    questionsDiv.appendChild(newQuestionDiv);//Adds the question div to the screen
+    
+    newQuestionDiv.style.backgroundColor = randomColor();
+}
+
+//Called when user wants to exit quiz creator
+function cancelQuiz(){
+    if (confirm("Are you sure you want to exit? All work will be DELETED!")) {
+        window.location.href = "../";
+    }
+}
+
+socket.on('startGameFromCreator', function(data){
+    window.location.href = "../../host/?id=" + data;
+});
+
+// function randomColor(){
+    
+//     var colors = ['#4CAF50', '#f94a1e', '#3399ff', '#ff9933'];
+//     var randomNum = Math.floor(Math.random() * 4);
+//     return colors[randomNum];
+// }
+
+// function setBGColor(){
+//     var randColor = randomColor();
+//     document.getElementById('question-field').style.backgroundColor = randColor;
+// }
+
+    </script>
+</body>
+
+</html>
