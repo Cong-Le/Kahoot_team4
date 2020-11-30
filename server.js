@@ -7,7 +7,7 @@ const socketIO = require('socket.io');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require("passport");
-
+const favicon = require('express-favicon');
 const router = express.Router();
 //passport config:
 require('./config/passport')(passport)
@@ -41,9 +41,9 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 app.use(express.static(publicPath));
+app.use(favicon(__dirname + '/public/images/kahootlogo_icon_green_mrb_icon.ico')); 
 
 
-//
 
 app.set('view engine', 'ejs');
 app.use(expressEjsLayout);
