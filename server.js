@@ -51,7 +51,7 @@ app.use(express.urlencoded({ extended: false }));
 //express session
 app.use(session({
     secret: 'secret',
-    resave: true,
+    resave: false,
     saveUninitialized: true
 }));
 app.use(passport.initialize());
@@ -533,6 +533,8 @@ io.on('connection', (socket) => {
         MongoClient.connect(url, function(err, db) {
             if (err) throw err;
             var dbo = db.db('kahootDB');
+
+            db.close();
 
         })
     });

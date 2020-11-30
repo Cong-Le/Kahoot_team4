@@ -88,5 +88,5 @@ function startGame(data) {
 }
 
 function deleteQuiz(data) {
-    window.location.href = "../"; //chua sua gi`
+    window.location.href = "/"; //chua sua gi`
 }
