@@ -14,6 +14,7 @@
     background-color: lightcyan;
     text-align: center;
     height:135px;
+    width: 100%;
     
 }
 
@@ -31,6 +32,9 @@
 
 #bieudo{
     text-align: center; 
+    width: 60%;
+    margin: 0px auto ; 
+    padding-top: 30px;
 }
 .question{
     width: 100%; 
