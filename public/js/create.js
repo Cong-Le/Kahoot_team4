@@ -66,6 +66,7 @@ socket.on('gameNamesData', function(data) {
         buttonDelete.innerHTML = "Xóa";
 
         buttonplay.setAttribute('onClick', "startGame('" + data[i].id + "')");
+        buttonDelete.setAttribute('onClick', "Delete(" + data[i].id + ")");
 
         k.appendChild(div1);
         k.appendChild(div2);
@@ -86,4 +87,10 @@ socket.on('gameNamesData', function(data) {
 
 function startGame(data) {
     window.location.href = "/host/" + "?id=" + data;
+}
+
+function Delete(data){
+    var quiz = {id:data}; 
+    socket.emit('deleteQuiz',quiz); 
+    window.location.href="/create"; 
 }

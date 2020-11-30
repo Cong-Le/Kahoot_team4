@@ -20,6 +20,7 @@ const { LiveGames } = require('./utils/liveGames');
 
 // Run Players 
 const { Players } = require('./utils/players');
+const { Console } = require('console');
 
 const publicPath = path.join('public');
 var app = express();
@@ -530,7 +531,15 @@ io.on('connection', (socket) => {
     });
 
     socket.on('deleteQuiz', function(data) {
-
+        MongoClient.connect(url,function(err,db){
+            if(err) throw err ; 
+            var dbo = db.db('kahootDB'); 
+            var dele = dbo.collection('kahootGames');
+            dele.deleteOne(data,function(err,res){
+                if(err) throw err; 
+                console.log(res.result.n + data.id);
+            });
+        });
     });
 
     socket.on('editQuiz', function(data) {

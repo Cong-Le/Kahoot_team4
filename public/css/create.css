@@ -203,7 +203,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     border: 1px solid white;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 #delete {
     position: absolute;
@@ -219,7 +219,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     border: 1px solid white;
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
+    cursor: pointer; 
 }
 /* button{
     width:60px;
