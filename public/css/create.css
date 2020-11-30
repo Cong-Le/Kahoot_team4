@@ -25,6 +25,7 @@ body {
     animation: bgcolor 10s infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate; */
+    background-color: #F2F2F2 ; 
 }
 
 

@@ -3,6 +3,7 @@ var socket = io();
 var params = jQuery.deparam(window.location.search); //Gets the id from url
 
 var timer;
+var count1 = 1;
 
 var time = 10;
 
@@ -25,6 +26,7 @@ socket.on('gameQuestions', function(data){
     document.getElementById('answer4').innerHTML = data.a4;
     var correctAnswer = data.correct;
     document.getElementById('playersAnswered').innerHTML = "Players Answered 0 / " + data.playersInGame;
+    document.getElementById('questionNum').innerHTML = "Question " + count1;
     updateTimer();
 });
 
@@ -105,6 +107,8 @@ socket.on('questionOver', function(playerData, correct){
 });
 
 function nextQuestion(){
+    count1+=1;
+    document.getElementById('questionNum').innerHTML = "Question " + count1;
     document.getElementById('nextQButton').style.display = "none";
     document.getElementById('skipQButton').style.display = "block";
     document.getElementById('square1').style.display = "none";
