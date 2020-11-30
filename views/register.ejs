@@ -4,7 +4,7 @@
 <div class="modal">
 
     <div class="register_header">
-        <img id="logo" src="\images\KahootLogo_Full_green.png" alt="Logo">
+        <img id="logo" src="\images\KahootLogo_Full_purple.png" alt="Logo">
     </div>
 
     <div class="modal__overlay">
@@ -12,7 +12,7 @@
         <!--Register form-->
         <div class="register-form">
 
-            <div class="auth-form__container">
+            <div class="auth-form__container_register">
                 <div class="auth-form__header">
                     <label class="auth-form__heading">Đăng kí</label>
                 </div>
@@ -28,8 +28,7 @@
                                 value="<%= typeof email != 'undefined' ? email : '' %>">
                         </div>
                         <div class="auth-form__group">
-                            <input type="password" name="password" class="auth-form__input"
-                                placeholder="Mật khẩu"
+                            <input type="password" name="password" class="auth-form__input" placeholder="Mật khẩu"
                                 value="<%= typeof password != 'undefined' ? password : '' %>">
                             <input type="password" name="password2" class="auth-form__input"
                                 placeholder="Nhập lại mật khẩu"
@@ -38,7 +37,7 @@
                     </div>
                     <div class="auth-form__aside">
                         <p class="auth-form__policy-text">
-                            Bằng việc đăng kí, bạn đã đồng ý với Kahoot! về<br/>
+                            Bằng việc đăng kí, bạn đã đồng ý với Kahoot! về<br />
                             <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a>
                             &
                             <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
@@ -48,15 +47,12 @@
                         <!-- <a href="/users/login" class="btn auth-form__controls-back btn--normal">TRỞ LẠI</a> -->
                         <button type="submit" class="btn btn--primary">ĐĂNG KÍ</button>
                     </div>
-            </div>
-            </form>
+                </form>
 
 
-            <div class="auth-form__tologin">
-                <label class="tologin">Đã có tài khoản? <a href="/users/login"><u>Đăng nhập</u></a></label>
-            </div>
+                
 
-            <!-- <div class="auth-form__socials">
+                <!-- <div class="auth-form__socials">
                 <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
                     <i class="auth-form__socials-icon fa fa-facebook-official" aria-hidden="true"></i>
                     <span class="auth-form__socials-title">Kết nối với Facebook</span>
@@ -67,6 +63,9 @@
                     <span class="auth-form__socials-title">Kết nối với Google</span>
                 </a>
             </div> -->
+            </div>
+            <div class="auth-form__tologin">
+                <label class="tologin">Đã có tài khoản? <a href="/users/login"><u>Đăng nhập</u></a></label>
+            </div>
         </div>
     </div>
-</div>
