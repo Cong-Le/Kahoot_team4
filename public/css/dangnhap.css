@@ -21,7 +21,9 @@
     left: 0;
     display: flex;
 } */
-
+body{
+    margin: 0px;
+}
 .login_header {
     height: 55px;
     width: 100%;

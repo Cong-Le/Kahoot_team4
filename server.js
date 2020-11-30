@@ -35,7 +35,7 @@ var MongoClient = require('mongodb').MongoClient;
 
 var url = "mongodb://localhost:27017/kahootDB";
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('connected 100'))
+    .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.log(err));
 
 
@@ -177,7 +177,7 @@ io.on('connection', (socket) => {
             //If the pin is equal to one of the game's pin
             if (params.pin == games.games[i].pin) {
 
-                console.log('Player connected to game');
+                console.log('Player [' +params.name+ '] connected to game');
 
                 var hostId = games.games[i].hostId; //Get the id of host of game
 
@@ -401,7 +401,7 @@ io.on('connection', (socket) => {
                     var fifth = { name: "", score: 0 };
 
                     for (var i = 0; i < playersInGame.length; i++) {
-                        console.log(playersInGame[i].gameData.score);
+                        console.log(playersInGame[i].name+ ' :', playersInGame[i].gameData.score);
                         if (playersInGame[i].gameData.score > fifth.score) {
                             if (playersInGame[i].gameData.score > fourth.score) {
                                 if (playersInGame[i].gameData.score > third.score) {
