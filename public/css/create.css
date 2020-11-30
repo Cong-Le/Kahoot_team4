@@ -204,13 +204,28 @@ body {
     border: 1px solid white;
     cursor: not-allowed;
 }
-
+#delete {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    margin: 9px 12px;
+    width: 64px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #ff0000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 1px solid white;
+    cursor: not-allowed;
+}
 /* button{
     width:60px;
     height: 33px;
     color: white;
     border: 2px solid #ccc;
-   /*  border-radius: 8px; */
+    border-radius: 8px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     color: white;

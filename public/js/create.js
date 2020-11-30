@@ -39,7 +39,7 @@ socket.on('gameNamesData', function(data) {
         div4.setAttribute('class', 'kahoot-card__action-buttons');
         div5.setAttribute('id', 'play_btn');
         div6.setAttribute('id', 'repair_btn');
-        div7.setAttribute('id', 'delete');
+        div7.setAttribute('id', 'delete_btn');
 
 
 
@@ -63,7 +63,7 @@ socket.on('gameNamesData', function(data) {
 
         buttonplay.innerHTML = "Chơi";
         buttonedit.innerHTML = "Sửa";
-        buttonDelete.innerHTML = "Xoa";
+        buttonDelete.innerHTML = "Xóa";
 
         buttonplay.setAttribute('onClick', "startGame('" + data[i].id + "')");
 
