@@ -74,6 +74,7 @@ socket.on('gameNamesData', function(data) {
         div2.appendChild(div4);
         div4.appendChild(div5);
         div4.appendChild(div6);
+        div4.appendChild(div7);
         div5.appendChild(buttonplay);
         div6.appendChild(buttonedit);
         div7.appendChild(buttonDelete);
