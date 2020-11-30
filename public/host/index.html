@@ -8,13 +8,20 @@
     </head>
     <body>
         <button id = "cancel" onclick = "endGame()">Exit</button>
-        <label id = "title">Join this Game using the Game Pin: </label>
-        <label id = "gamePinText"></label>
-        <textarea style = "width: 700px; height: 440px;" readonly id = 'players_box'></textarea>
-        <br>
-        <button id = 'start' onclick = "startGame()">Start Game</button>
-        <br>
-        <br>
+        <!-- <label id = "title">Join this Game using the Game Pin: </label>
+        <label id = "gamePinText"></label> -->
+        <div id="mapin">
+            <h2 id="pin">Game pin:</h2>
+            <h2 id="gamePinText"></h2>
+        </div>
+        <div id="startgame">
+            <button id = 'start' onclick = "startGame()">Start Game</button>
+        </div>
+        <!-- <textarea  readonly id = 'players_box'></textarea> -->
+        <div id="dsplayer">
+            <textarea  readonly id = 'players_box'></textarea>
+        </div>
+        
         <script src = "../socket.io/socket.io.js"></script>
         <script src = "../js/libs/jqueryLibrary.js"></script>
         <script src = "../js/libs//deparam.js"></script>
