@@ -63,7 +63,7 @@ socket.on('gameNamesData', function(data) {
 
         buttonplay.innerHTML = "Chơi";
         buttonedit.innerHTML = "Sửa";
-        buttonDelete.innerHTML = "Xoa";
+        buttonDelete.innerHTML = "Xóa";
 
         buttonplay.setAttribute('onClick', "startGame('" + data[i].id + "')");
 
