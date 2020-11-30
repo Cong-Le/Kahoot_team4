@@ -4,7 +4,7 @@ var params = jQuery.deparam(window.location.search); //Gets the id from url
 
 var timer;
 
-var time = 20;
+var time = 10;
 
 //When host connects to server
 socket.on('connect', function() {
@@ -119,7 +119,7 @@ function nextQuestion(){
     
     document.getElementById('playersAnswered').style.display = "block";
     document.getElementById('timerText').style.display = "block";
-    document.getElementById('num').innerHTML = " 20";
+    document.getElementById('num').innerHTML = " 10";
     socket.emit('nextQuestion'); //Tell server to start new question
 }
 
