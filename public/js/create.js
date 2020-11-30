@@ -29,8 +29,6 @@ socket.on('gameNamesData', function(data) {
 
 
 
-
-
         k.setAttribute('class', 'kahoot-card__content-wrap');
 
         div2.setAttribute('id', 'kahoot-card__details');
@@ -66,6 +64,7 @@ socket.on('gameNamesData', function(data) {
         buttonDelete.innerHTML = "Xóa";
 
         buttonplay.setAttribute('onClick', "startGame('" + data[i].id + "')");
+        buttonDelete.setAttribute('onClick', "deleteQuiz('" + data[i].id + "')");
 
         k.appendChild(div1);
         k.appendChild(div2);
@@ -86,4 +85,8 @@ socket.on('gameNamesData', function(data) {
 
 function startGame(data) {
     window.location.href = "/host/" + "?id=" + data;
+}
+
+function deleteQuiz(data) {
+    window.location.href = "../"; //chua sua gi`
 }

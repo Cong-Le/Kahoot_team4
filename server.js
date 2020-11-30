@@ -530,7 +530,11 @@ io.on('connection', (socket) => {
     });
 
     socket.on('deleteQuiz', function(data) {
+        MongoClient.connect(url, function(err, db) {
+            if (err) throw err;
+            var dbo = db.db('kahootDB');
 
+        })
     });
 
     socket.on('editQuiz', function(data) {
