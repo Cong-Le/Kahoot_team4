@@ -1,39 +1,39 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
-#title {
+body{
+    height:auto ; 
     width: 100%;
-    height: 135px;
 }
 
-#title_title {
-    background-color: lightcyan;
+#title{
+    width:100% ; 
+    height: 135px; 
+    
+
+}
+#title_title{
+    background-color: whitesmoke;
     text-align: center;
-<<<<<<< HEAD
     height:135px;
     width: 100%;
     
-=======
-    height: 135px;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 }
 
-#title_div {
+#title_div{
     width: 18%;
-    height: 60px;
-    background-color: white;
-    ;
-    border: 0.1px solid #ccc;
-    border-radius: 5px;
-    padding: 0px 0px;
+    height:60px;
+    background-color: white;;
+    border: 0.1px solid #ccc ; 
+    border-radius:5px ;
+    padding: 0px 0px ; 
     float: left;
-    text-shadow: 0.1px 0.1px #ccc;
+    text-shadow: 0.1px 0.1px #ccc; 
+
 }
 
-<<<<<<< HEAD
 #bieudo{
     text-align: center; 
     width: 60%;
@@ -44,40 +44,28 @@
     width: 100%; 
     
     height: 270px; 
-=======
-#bieudo {
-    text-align: center;
+    background-color: whitesmoke;
 }
 
-.question {
-    width: 100%;
-    height: 270px;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
-    background-color: lightcyan;
-}
-
-#question_title {
+#question_title{
     background-color: teal;
-    height: 200px;
+    height:200px;
     width: 70%;
-<<<<<<< HEAD
     margin: 0px auto; 
     border: 2px solid #ccc ; 
     border-radius : 8px ; 
     box-shadow: 1px 1px #ccc;
     
-=======
-    margin: 0px auto;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 }
-
-h2 {
+h2{
     text-align: center;
     padding: 70px;
     font-size: 40px;
 }
 
-#answer1 {
+
+#answer1{
+     
     background-color: #4CAF50;
     margin: auto;
     
@@ -85,91 +73,72 @@ h2 {
     height: 88px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    width: 49%;
-    float: left;
+    width:49% ; 
+    float:left ; 
     border-radius: 8px;
-}
 
-#answer2 {
+}
+#answer2{
     background-color: #f94a1e;
-    float: right;
+    float:right ;
     margin: auto;
     padding: 30px 20px;
     height: 88px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    width: 49%;
+    width:49% ; 
     border-radius: 8px;
+     
 }
-
-#answer3 {
+#answer3{
     background-color: #3399ff;
     margin: auto;
-    float: left;
+    float:left ; 
     padding: 30px 20px;
     height: 88px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    width: 49%;
+    width:49% ; 
     border-radius: 8px;
-<<<<<<< HEAD
     margin-top: 15px;
     
     
-=======
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 }
-
-#answer4 {
+#answer4{
     background-color: #ff9933;
     margin: auto;
-    float: right;
+    float:right ; 
     padding: 30px 20px;
     height: 88px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    width: 49%;
+    width:49% ; 
     border-radius: 8px;
-<<<<<<< HEAD
     margin-top: 15px;
   
-=======
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 }
-
-#answer {
-    clear: both;
-    width: 100%;
-    height: 260px;
-    background-color: lightcyan;
-<<<<<<< HEAD
+#answer{
+    clear: both ; 
+    width : 100%;
+    height : 230px;
+    background-color: whitesmoke;
     padding: 26px 0px; 
 
-=======
-    padding: 26px 0px;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 }
-
-#answer_title {
-    background-color: lightcyan;
+#answer_title{
+    background-color:whitesmoke;
     width: 90%;
     height: 176px;
-<<<<<<< HEAD
    
     margin: 0px auto ;
     padding-top:0px;
     
-=======
-    margin: 0px auto;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
     /* margin: 0px auto ; */
 }
-
-#function {
-    clear: both;
+#function{
+    clear:both;
 }
-
-.square {
+.square{
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -182,143 +151,93 @@ h2 {
     font-size: 20px;
 }
 
-#square1 {
+#square1{
     background-color: #4CAF50;
 }
-
-#square2 {
+#square2{
     background-color: #f94a1e;
 }
-
-#square3 {
+#square3{
     background-color: #3399ff;
 }
-
-#square4 {
+#square4{
     background-color: #ff9933;
 }
 
-<<<<<<< HEAD
 #rank{
-    background-color:lightcyan;
-=======
-#nextQButton,
-#skipQButton {
-    width: 240px;
-    height: 55px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 1px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-    margin-right: 0px;
-    margin-left: auto;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: #333333;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-}
-
-#rank {
-    background-color: lightcyan;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
+    background-color:whitesmoke;
     width: 100%;
-    height: 500px;
+    height : 500px;
+    display:none;
 }
-
-#skipQButton {
-    clear: both;
+#skipQButton{
+    clear: both ; 
 }
-
-#nextQButton {
-    display: none;
+#nextQButton{
+    display:none;
 }
-
-#question {
+#question{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     text-shadow: 1px 1px #ccc;
     font-size: 44px;
 }
-
-#timerText {
+#timerText{
     font-family: 'Raleway', sans-serif;
 }
-
-#num {
+#num{
     font-family: 'Tajawal', sans-serif;
     font-size: 35px;
 }
-
-#playersAnswered {
+#playersAnswered{
     font-family: 'Tajawal', sans-serif;
 }
-
-#questionNum {
+#questionNum{
     font-family: 'Tajawal', sans-serif;
-    font-size: 20px;
+    font-size: 20px; 
 }
 
-#winner1 {
+#winner1{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 30px;
     display: none;
 }
-
-#winner2 {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-<<<<<<< HEAD
-    font-size: 30px;
-=======
-    font-size: 25px;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
-    display: none;
-}
-
-#winner3 {
+#winner2{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 30px;
     display: none;
 }
-
-#winner4 {
+#winner3{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 30px;
     display: none;
 }
-
-#winner5 {
+#winner4{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 30px;
     display: none;
 }
-
-#winnerTitle {
+#winner5{
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-<<<<<<< HEAD
+    font-size: 30px;
+    display: none;
+}
+#winnerTitle{
+    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 45px;
     color: #3399ff;
-=======
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    color: #291c9e;
->>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
     display: none;
 }
 #function{
     margin-top: 30px;
     width: 100%; 
-    background-color: lightcyan ; 
+    background-color: whitesmoke ; 
     margin-bottom: 0px;
     height: 40px;
     
