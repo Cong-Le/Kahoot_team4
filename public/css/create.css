@@ -61,7 +61,7 @@ body {
     /*   border: 2px solid rgb(0, 0, 0); */
     min-width: 600px;
       width: 100%;
-      height: auto;
+      height: 100%;
       background-color: #F2F2F2;
       position: absolute;
       left: 0px;
@@ -89,6 +89,7 @@ body {
     border-radius: 4px;
     height: 140px;
     position: relative;
+    box-shadow: 0px 0px 10px rgb(206, 206, 206);
     /* border: 1px solid red; */
 }
 #kahoot-card__image {
@@ -225,7 +226,7 @@ header{
 .logo{
     display: block;
     max-width: 180px;
-    margin-right: 60px;
+    margin-left: 20px;
 }
 .logo img{
     height: 35px;
@@ -245,12 +246,12 @@ header{
 .dropbtn {
     background-color:#46178F;
     text-decoration: none;
-    
+    margin-top: 5px;
     color: white;
     margin-right: 10px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     opacity: 0;
 }
 .dropbtn .fa{
@@ -269,13 +270,15 @@ header{
 .dropdown-content {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
+    border-radius: 2px;
+    right: 0px;
 }
  
 /* Định dạng các thẻ a là các menu con */
@@ -295,14 +298,14 @@ header{
 #img1 {
     width: 39px;
     margin-right: -46px;
-    margin-bottom: 2px;
+    margin-top:5px;
     background-color: white;
     border-radius: 50%; 
 }
 #img2 {
     width: 25px;
-    margin-right: -44px;
-    margin-bottom: 5px;
+    margin-right: -41px;
+    margin-top: 6px;
     border: 3px solid white;
     border-radius: 50%; 
 }
