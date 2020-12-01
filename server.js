@@ -36,7 +36,7 @@ var MongoClient = require('mongodb').MongoClient;
 
 var url = "mongodb://localhost:27017/kahootDB";
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('connected 100'))
+    .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.log(err));
 
 
@@ -52,7 +52,7 @@ app.use(express.urlencoded({ extended: false }));
 //express session
 app.use(session({
     secret: 'secret',
-    resave: true,
+    resave: false,
     saveUninitialized: true
 }));
 app.use(passport.initialize());
@@ -178,7 +178,7 @@ io.on('connection', (socket) => {
             //If the pin is equal to one of the game's pin
             if (params.pin == games.games[i].pin) {
 
-                console.log('Player connected to game');
+                console.log('Player [' +params.name+ '] connected to game');
 
                 var hostId = games.games[i].hostId; //Get the id of host of game
 
@@ -402,7 +402,7 @@ io.on('connection', (socket) => {
                     var fifth = { name: "", score: 0 };
 
                     for (var i = 0; i < playersInGame.length; i++) {
-                        console.log(playersInGame[i].gameData.score);
+                        console.log(playersInGame[i].name+ ' :', playersInGame[i].gameData.score);
                         if (playersInGame[i].gameData.score > fifth.score) {
                             if (playersInGame[i].gameData.score > fourth.score) {
                                 if (playersInGame[i].gameData.score > third.score) {
@@ -531,6 +531,7 @@ io.on('connection', (socket) => {
     });
 
     socket.on('deleteQuiz', function(data) {
+<<<<<<< HEAD
         MongoClient.connect(url,function(err,db){
             if(err) throw err ; 
             var dbo = db.db('kahootDB'); 
@@ -540,6 +541,15 @@ io.on('connection', (socket) => {
                 console.log(res.result.n + data.id);
             });
         });
+=======
+        MongoClient.connect(url, function(err, db) {
+            if (err) throw err;
+            var dbo = db.db('kahootDB');
+
+            db.close();
+
+        })
+>>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
     });
 
     socket.on('editQuiz', function(data) {

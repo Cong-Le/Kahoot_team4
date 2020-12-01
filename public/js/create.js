@@ -29,8 +29,6 @@ socket.on('gameNamesData', function(data) {
 
 
 
-
-
         k.setAttribute('class', 'kahoot-card__content-wrap');
 
         div2.setAttribute('id', 'kahoot-card__details');
@@ -66,7 +64,11 @@ socket.on('gameNamesData', function(data) {
         buttonDelete.innerHTML = "Xóa";
 
         buttonplay.setAttribute('onClick', "startGame('" + data[i].id + "')");
+<<<<<<< HEAD
         buttonDelete.setAttribute('onClick', "Delete(" + data[i].id + ")");
+=======
+        buttonDelete.setAttribute('onClick', "deleteQuiz('" + data[i].id + "')");
+>>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 
         k.appendChild(div1);
         k.appendChild(div2);
@@ -89,8 +91,13 @@ function startGame(data) {
     window.location.href = "/host/" + "?id=" + data;
 }
 
+<<<<<<< HEAD
 function Delete(data){
     var quiz = {id:data}; 
     socket.emit('deleteQuiz',quiz); 
     window.location.href="/create"; 
+=======
+function deleteQuiz(data) {
+    window.location.href = "/"; //chua sua gi`
+>>>>>>> 6a9423bf3436db606031726b1bf70865fefa5720
 }
