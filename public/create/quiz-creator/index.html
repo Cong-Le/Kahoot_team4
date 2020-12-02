@@ -23,7 +23,7 @@
             <img id="logo" src="\images\KahootLogo_Full_white.png" alt="Logo">
 
 
-            <input class="title1" id="name" type="text" name="name" autofocus placeholder="Enter kahoot title..." />
+            <input class="title1" id="name" type="text" name="name" placeholder="Enter kahoot title..." />
 
             <button id='exit_btn' onclick="location.href='/create/index.html'" type="button">Hủy bỏ</button>
             
@@ -117,7 +117,7 @@
             socket.emit('newQuiz', quiz);
             
             toastr.success('Đã tạo game của bạn', 'Thành công!');
-            setTimeout(() => location.href='/create/index.html', 2000);
+            setTimeout(() => location.href='/create/index.html', 1500);
         }
 
         function addQuestion() {

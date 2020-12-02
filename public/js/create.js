@@ -66,6 +66,7 @@ socket.on('gameNamesData', function(data) {
         buttonDelete.innerHTML = "Xóa";
 
         buttonplay.setAttribute('onClick', "startGame('" + data[i].id + "')");
+        buttonedit.setAttribute('onClick', "edit('" + data[i].id + "')");
         buttonDelete.setAttribute('onClick', "Delete(" + data[i].id + ")");
 
         k.appendChild(div1);
@@ -91,6 +92,12 @@ function startGame(data) {
 
 function Delete(data){
     var quiz = {id:data}; 
-    socket.emit('deleteQuiz',quiz); 
-    window.location.href="/create"; 
+    socket.emit('deleteQuiz',quiz);
+    toastr.success('Game đã được xóa', 'Thành công!');
+    setTimeout(() => window.location.href="/create", 1000);
+    
+}
+
+function edit(data) {
+    window.location.href = "/edit/" + "?id=" + data;
 }

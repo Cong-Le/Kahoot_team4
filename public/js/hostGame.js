@@ -25,8 +25,8 @@ socket.on('gameQuestions', function(data){
     document.getElementById('answer3').innerHTML = data.a3;
     document.getElementById('answer4').innerHTML = data.a4;
     var correctAnswer = data.correct;
-    document.getElementById('playersAnswered').innerHTML = "Players Answered 0 / " + data.playersInGame;
-    document.getElementById('questionNum').innerHTML = "Question " + count1;
+    /* document.getElementById('playersAnswered').innerHTML = "Players Answered 0 / " + data.playersInGame; */
+    document.getElementById('questionNum').innerHTML = "Câu hỏi " + count1;
     updateTimer();
 });
 

@@ -5,14 +5,15 @@
         <link rel = "stylesheet" href = "../../css/hostGameView.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="title"> 
             <div id="title_title">
                 <div id="title_div">
-                    <h4 id = "questionNum">Question </h4>
-                    <h4 id = "playersAnswered">Players Answered: 0 / x</h4>
-                    <h3 id = "timerText">Time Left:<span id = "num"> 10</span></h3>
+                    <h4 id = "questionNum">Câu hỏi </h4>
+                    <h4 id = "playersAnswered"></h4>
+                    <h3 id = "timerText"><span id = "num">10</span></h3>
                 </div>
                 <div id="bieudo">
                     <div class = "square" id = "square1"></div>
@@ -32,11 +33,11 @@
         
         <div class="question">
             <div id="question_title">
-                <h2 id = "question">Question</h2>
+                <h2 id = "question">Câu hỏi</h2>
             </div>
             <div id="function">
-                <button onclick = "nextQuestion()" id = "nextQButton">Next Question</button>
-                <button onclick = "skipQuestion()" id = "skipQButton">Skip Question</button>
+                <button onclick = "nextQuestion()" id = "nextQButton">Tiếp</button>
+                <button onclick = "skipQuestion()" id = "skipQButton">Bỏ qua</button>
             </div>
         </div>
 

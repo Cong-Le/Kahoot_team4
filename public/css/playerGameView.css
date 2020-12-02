@@ -18,6 +18,10 @@ button{
 #buttons{
     text-align: center;
 }
+button {
+    border-radius: 3px;
+    border: none;
+}
 #nameText{
     font-family: 'Raleway', sans-serif;
     padding: 0px 10px;

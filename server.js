@@ -543,7 +543,39 @@ io.on('connection', (socket) => {
         });
     });
 
-    socket.on('editQuiz', function(data) {
+    socket.on('edit-game', (data) => {
+        var gameid = data;
+        MongoClient.connect(url, function(err, db){
+            if (err) throw err;
 
+            var dbo = db.db('kahootDB');
+            var query = { id: parseInt(gameid)};
+            var array = [];
+            dbo.collection("kahootGames").find(query).toArray(function(err, res) {
+                if (err) throw err;
+                var sizequestion = res[0].questions.length;
+                var name = res[0].name;
+                for(var i=0;i<sizequestion;i++){
+                array[0+i*10] = res[0].questions[i].question;
+                array[1+i*10] = res[0].questions[i].answers[0];
+                array[2+i*10] = res[0].questions[i].answers[1];
+                array[3+i*10] = res[0].questions[i].answers[2];
+                array[4+i*10] = res[0].questions[i].answers[3];
+                array[5+i*10] = res[0].questions[i].correct;
+                // ++
+                array[6+i*10] = res[0].questions[i].time;
+                array[7+i*10] = res[0].questions[i].poin;
+                
+                }
+                
+                socket.emit('editQuestions', {
+                    q1: array,
+                    size1: sizequestion,
+                    name: name
+                });
+                db.close();
+            });
+        });
+        
     });
 });
